@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { addReminder, deleteReminder } from '../actions';
+import ReduxDemo from '../ReduxDemo';
 
 class App extends Component {
     constructor(props) {
@@ -53,6 +54,7 @@ class App extends Component {
                     </div>
                 </div>
                 {this.renderReminders()}
+                <ReduxDemo />
             </div>
         )
     }
